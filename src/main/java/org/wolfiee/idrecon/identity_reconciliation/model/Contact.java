@@ -12,9 +12,9 @@ public class Contact {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
-    private long linkedid;
+    private Long linkedid;
 
     @Enumerated(EnumType.STRING)
     private LinkPrecedence linkPrecedence;
@@ -24,19 +24,19 @@ public class Contact {
     private LocalDateTime updatedAt;
     private LocalDateTime deletedAt;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public long getLinkedid() {
+    public Long getLinkedid() {
         return linkedid;
     }
 
-    public void setLinkedid(long linkedid) {
+    public void setLinkedid(Long linkedid) {
         this.linkedid = linkedid;
     }
 
