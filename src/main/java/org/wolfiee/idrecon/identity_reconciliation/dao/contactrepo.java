@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface contactrepo extends JpaRepository<Contact,Long> {
     List<Contact> findByEmail(String email);
-    List<Contact> findByPhoneNumber(String phoneNumber);
-    List<Contact> findByEmailOrPhoneNumber(String email, String phoneNumber);
-    List<Contact> findByLinkedId(Long linkedId);
+    List<Contact> findByPhonenum(String phonenum);
+    List<Contact> findByEmailOrPhonenum(String email, String phonenum);
+    List<Contact> findByLinkedid(Long linkedid);
 }

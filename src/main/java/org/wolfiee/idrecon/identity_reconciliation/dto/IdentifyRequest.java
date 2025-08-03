@@ -1,10 +1,13 @@
 package org.wolfiee.idrecon.identity_reconciliation.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
 public class IdentifyRequest {
     private String email;
+
+    @JsonProperty("phoneNumber")
     private String phonenum;
 
     public String getEmail() {
